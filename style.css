@@ -961,9 +961,7 @@ img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.397); /* Bayangan lembut agar terlihat melayang */
   overflow: hidden; /* Memastikan sudut PDF ikut melengkung rapi */
   position: relative;
-
-  /* Mengaktifkan scroll internal yang sangat mulus di iOS/Safari */
-  overflow-y: auto;
+  aspect-ratio: 1/1.35;
 }
 
 /* Pengaturan Elemen iFrame Utama */
@@ -971,11 +969,7 @@ img {
   width: 100%;
   border: none;
   display: block;
-
-  /* KUNCI RESPONSIVITAS TINGGI:
-         - Di HP minimal tingginya 420px agar lembaran terlihat proporsional.
-         - Di Laptop/Tablet maksimal tingginya 620px agar tidak terlalu memakan scroll halaman. */
-  height: clamp(420px, 80vw, 620px);
+  height: 100%;
 }
 
 /* KEYFRAMES ANIMASI */
